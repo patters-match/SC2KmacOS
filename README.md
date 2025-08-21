@@ -1,4 +1,4 @@
-# SimCity 2000 SE (Win95) on modern macOS
+# How to run SimCity 2000 Special Edition (for Windows 95) on modern macOS
 
 ![SC2000 Gameplay](images/sc2000.png)
 This should be easy, Wine can run Windows software after all. However there are several complications:
