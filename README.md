@@ -50,5 +50,5 @@ I moved onto another method described in [Corbin Davenport's guide](https://www.
 - In Terminal run `touch ~/Applications/SimCity\ 2000.app` so that Finder updates the icon
 - Launch the game from the macOS LaunchPad, the window will default to full screen:
   ![Fullscreen main menu](images/windowsize.png)
-- In sc2kfix menu select Always skip introduction videos to clear the message each startup
+- In sc2kfix menu select Always skip introduction videos to clear the "Skipping in-flight movie" message each startup
 - Enjoy!
