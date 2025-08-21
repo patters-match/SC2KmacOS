@@ -36,5 +36,9 @@ I moved onto another method described in [Corbin Davenport's guide](https://www.
 - Copy winmm.dll from sc2kfix to `Contents/drive_c/Program Files/Maxis/SimCity 2000`
 - Back to Porting Kit, Games > Installed, click the gear wheel on your Custom Port and select Wine Configuration
 - Libraries tab > New override for library: `winmm` > Add - which will default to (native, builtin)
+- Download [icns-creator](https://github.com/alptugan/icns-creator)
+- Create an iconset using the SimCity 2000 SE box art
+- Copy it to `Contents/Resources/Wineskin.icns`
+- In Terminal run `touch ~/Applications/SimCity\ 2000.app` so Finder updates the icon
 - Launch the game from the macOS LaunchPad
 - Enjoy!
