@@ -36,6 +36,7 @@ I moved onto another method described in [Corbin Davenport's guide](https://www.
 - Once complete you will see a familiar InstallShield screen from the past:
   ![InstallShield](images/installer.png)
 - Go with all the defaults, then quit out of the CD-ROM autorun screen that pops up after the install
+- Select SIMCITY.EXE as the main executable when prompted
 - Download and unzip the [sc2kfix release](https://github.com/sc2kfix/sc2kfix)
 - In Porting Kit, Games > Installed, click the gear wheel on your Custom Port and select Show in Finder
 - Right-click on the new app, Show Package Contents
