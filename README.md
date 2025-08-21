@@ -1,4 +1,4 @@
-# How to run SimCity 2000 Special Edition on modern macOS
+# How to run SimCity 2000 Special Edition on modern macOS in 2025
 
 ![SC2000 Gameplay](images/sc2000.png)
 
