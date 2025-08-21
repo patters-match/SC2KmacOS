@@ -29,7 +29,9 @@ I moved onto another method described in [Corbin Davenport's guide](https://www.
 - Select engine `WS11WineCX64Bit21.1.0`, Operating system `Windows 98`, Window driver `Mac Driver`, Next, Next, Next
 - Select the installer WIN95/setup32.exe, Next
 - The Wine prefix and wrapper will now be configured which can take a few minutes
-- Once complete you will see a familiar InstallShield screen from the past, go with all the defaults, then quit out of the CD-ROM autorun screen that pops up after the install.
+- Once complete you will see a familiar InstallShield screen from the past:
+  ![InstallShield](images/installer.png)
+- Go with all the defaults, then quit out of the CD-ROM autorun screen that pops up after the install.
 - Download and unzip the [sc2kfix release](https://github.com/sc2kfix/sc2kfix)
 - In Porting Kit, Games > Installed, click the gear wheel on your Custom Port and select Show in Finder
 - Right-click on the new app, Show Package Contents
@@ -37,7 +39,8 @@ I moved onto another method described in [Corbin Davenport's guide](https://www.
 - Back to Porting Kit, Games > Installed, click the gear wheel on your Custom Port and select Wine Configuration
 - Libraries tab > New override for library: `winmm` > Add - which will default to (native, builtin)
 - Download [icns-creator](https://github.com/alptugan/icns-creator)
-- Create an iconset using the SimCity 2000 SE box art
+- Create an iconset using a high quality image of the SimCity 2000 SE box art, which will give a result like this:  
+  ![SC2000 icon](images/icon.png)
 - Copy it to `Contents/Resources/Wineskin.icns` inside the app
 - In Terminal run `touch ~/Applications/SimCity\ 2000.app` so Finder updates the icon
 - Launch the game from the macOS LaunchPad
