@@ -7,7 +7,7 @@
 This should be easy, [Wine](https://www.winehq.org/) can run Windows software after all. However there are several complications:
 - Apple removed 32-bit binary support from macOS 10.15 Catalina onwards. This means modern macOS can no longer run 32-bit executables natively.
 - To work around this, Wine must be compiled in 64-bit mode with WOW64 support. WOW64 (“Windows-on-Windows 64-bit”) is a compatibility layer inside Windows (and now Wine) which allows 32-bit Windows applications to run inside a 64-bit environment.
-- While SimCity 2000 is 32-bit code, its installer is a 16-bit executable which WOW64 cannot run.
+- While SimCity 2000 is 32-bit code, its installer is a 16-bit executable which WOW64 cannot run. We will need to replace this.
 - The game has compatibility issues with current Wine 64-bit builds (smackw32.dll fails to initialise).
 - The game has other issues which need fixing:
   - palette cycling animation issues
@@ -38,7 +38,7 @@ I moved onto another method described in [Corbin Davenport's guide](https://www.
   ![InstallShield](images/installer.png)
 - Go with all the defaults, then quit out of the CD-ROM autorun screen that pops up after the install
 - Select SIMCITY.EXE as the main executable when prompted
-- Download and unzip the [sc2kfix release](https://github.com/sc2kfix/sc2kfix)
+- Download and unzip the comprehensive [sc2kfix release](https://github.com/sc2kfix/sc2kfix)
 - In Porting Kit, Games > Installed, click the gear wheel on your Custom Port and select Show in Finder
 - Right-click on the new app, Show Package Contents
 - Copy winmm.dll from sc2kfix to `Contents/drive_c/Program Files/Maxis/SimCity 2000`
