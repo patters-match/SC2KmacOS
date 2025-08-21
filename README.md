@@ -6,7 +6,7 @@ This should be easy, Wine can run Windows software after all. However there are 
 - While SimCity 2000 is 32-bit code, its installer is a 16-bit executable.
 - The game has compatibility issues with current Wine 64-bit builds (smackw32.dll fails to initialise).
 - The game has other issues which need fixing:
-  - palette cycling animation issues in >256 colour display modes
+  - palette cycling animation issues
   - load/save issues
   - game window initialises with an invisible size
 
@@ -41,4 +41,5 @@ I moved onto another method described in [Corbin Davenport's guide](https://www.
 - Copy it to `Contents/Resources/Wineskin.icns`
 - In Terminal run `touch ~/Applications/SimCity\ 2000.app` so Finder updates the icon
 - Launch the game from the macOS LaunchPad
+- In sc2kfix menu select Always skip introduction videos to clear the message each startup
 - Enjoy!
