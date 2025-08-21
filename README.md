@@ -48,6 +48,6 @@ I moved onto another method described in [Corbin Davenport's guide](https://www.
 - Copy it to `Contents/Resources/Wineskin.icns` inside the app
 - In Terminal run `touch ~/Applications/SimCity\ 2000.app` so that Finder updates the icon
 - Launch the game from the macOS LaunchPad, the window will default full screen:
-  ![Fullscreen main menu](images/fullscreen.png)
+  ![Fullscreen main menu](images/windowsize.png)
 - In sc2kfix menu select Always skip introduction videos to clear the message each startup
 - Enjoy!
