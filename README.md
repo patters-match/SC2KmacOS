@@ -2,7 +2,7 @@
 
 ![SC2000 Gameplay](images/sc2000.png)
 
-GOG sells SimCity 2000 Special Edition, but it's the MS-DOS version bundled with DOSBox which is restricted to 640 x 480 resolution. The advantage of the Windows 95 version is that it can make full use of a larger monitor resolution.
+[GOG](https://www.gog.com/en/game/simcity_2000_special_edition) sells SimCity 2000 Special Edition, but it's the MS-DOS version bundled with DOSBox which is restricted to 640 x 480 resolution. The advantage of the Windows 95 version is that it can make full use of a larger monitor resolution.
 
 This should be easy, Wine can run Windows software after all. However there are several complications:
 - Apple removed 32-bit binary support from macOS 10.15 Catalina onwards. This means modern macOS can no longer run 32-bit executables natively.
