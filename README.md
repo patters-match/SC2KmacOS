@@ -46,7 +46,7 @@ I moved onto another method described in [Corbin Davenport's guide](https://www.
 - Create an iconset using a high quality image of the SimCity 2000 SE box art, which will give a result like this:  
   ![SC2000 icon](images/icon.png)
 - Copy it to `Contents/Resources/Wineskin.icns` inside the app
-- In Terminal run `touch ~/Applications/SimCity\ 2000.app` so Finder updates the icon
+- In Terminal run `touch ~/Applications/SimCity\ 2000.app` so that Finder updates the icon
 - Launch the game from the macOS LaunchPad
 - In sc2kfix menu select Always skip introduction videos to clear the message each startup
 - Enjoy!
