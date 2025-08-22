@@ -34,7 +34,7 @@ I moved onto another method described in [Corbin Davenport's guide](https://www.
 - Select engine `WS11WineCX64Bit21.1.0`, Operating system `Windows 98`, Window driver `Mac Driver`, Next, Next, Next
 - Select the installer WIN95/setup32.exe, Next
 - The Wine prefix and wrapper will now be configured which can take a few minutes
-- Once complete you will see a familiar InstallShield screen from the past:
+- Once complete you will see a familiar looking InstallShield screen from the past:
   ![InstallShield](images/installer.png)
 - Go with all the defaults, then quit out of the CD-ROM autorun screen that pops up after the install
 - Select SIMCITY.EXE as the main executable when prompted
