@@ -17,7 +17,7 @@ This should be easy, [Wine](https://www.winehq.org/) can run Windows software af
 ## Wine versions
 
 #### Official ❌
-Wine binaries seem to be difficult to obtain for macOS. The usual method to install is to use the [brew package manager](https://formulae.brew.sh/cask/wine-stable). However, at the time of writing, neither version 10.02 (wine-stable) nor 10.13 (wine@devel) work for our intended purpose. It seems like they have been compiled without WOW64 support.
+Wine binaries seem to be difficult to obtain for macOS. The usual method to install is to use the [brew package manager](https://formulae.brew.sh/cask/wine-stable). However, at the time of writing, neither version 10.02 (wine-stable) nor 10.13 (wine@devel) work for our intended purpose. They seem to have been compiled without WOW64 support.
 
 #### CrossOver ❌
 [Corbin Davenport's 2023 guide](https://www.spacebar.news/how-to-play-simcity-2000-mac/) for the same task I am writing about had recommended to use [CrossOver](https://www.codeweavers.com/crossover) which is a commercial wrapper around a Wine fork. It adds proprietary patches and improvements to Wine, notably reliable WOW64 support back when upstream Wine's implementation was still incomplete. It supports creating multiple Wine configurations or 'bottles' for the specific needs of each Windows software package. It does provide a 14 day trial but I was unable to get it to play SimCity 2000, with the log revealing the reason being smackw32.dll failing to initialise. [This bug](https://bugs.winehq.org/show_bug.cgi?id=54670) was reported for Wine 8.0, it was confirmed to still affect Wine 9.7, and the ticket remains open.
