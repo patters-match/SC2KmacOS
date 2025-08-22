@@ -30,7 +30,9 @@ I moved onto another method described in [Corbin Davenport's guide](https://www.
 - Extract the WIN95 folder
 - Download the [generic 32bit InstallShield 3 EXE](https://community.pcgamingwiki.com/files/file/111-installshield-3-32-bit-generic-installer/) and place it in the WIN95 folder
 - Download [Porting Kit](https://www.portingkit.com/)
-- Open Porting Kit, Games > All Games, click Custom Port, Port Name `SimCity 2000`, Next, Next
+- Open Porting Kit, Games > All Games, click Custom Port:
+  ![Porting Kit](images/portingkit.png)
+- Port Name `SimCity 2000`, Next, Next
 - Select engine `WS11WineCX64Bit21.1.0`, Operating system `Windows 98`, Window driver `Mac Driver`, Next, Next, Next
 - Select the installer WIN95/setup32.exe, Next
 - The Wine prefix and wrapper will now be configured which can take a few minutes
