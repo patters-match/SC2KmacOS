@@ -30,6 +30,7 @@ I moved onto another method described in [Corbin Davenport's guide](https://www.
 - Extract the WIN95 folder
 - Download the [generic 32bit InstallShield 3 EXE](https://community.pcgamingwiki.com/files/file/111-installshield-3-32-bit-generic-installer/) and place it in the WIN95 folder
 - Download [Porting Kit](https://www.portingkit.com/)
+- Although it contains a preset for SimCity 2000 Special Edition, it's for the GOG DOS version and so no use here
 - Open Porting Kit, Games > All Games, click Custom Port:
   ![Porting Kit](images/portingkit.png)
 - Port Name `SimCity 2000`, Next, Next
