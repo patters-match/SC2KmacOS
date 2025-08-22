@@ -48,7 +48,7 @@ I moved onto another method described in [Corbin Davenport's guide](https://www.
 - Back to Porting Kit, Games > Installed, click the gear wheel on your Custom Port and select Wine Configuration
 - Libraries tab > New override for library: `winmm` > Add - which will default to (native, builtin)
 - Download [icns-creator](https://github.com/alptugan/icns-creator)
-- Create an iconset using a high quality image of the SimCity 2000 SE box art, which will give a result like this:  
+- Create an iconset using a high quality image of the SimCity 2000 box art which, without rounded corners, will give a result like this:  
   ![SC2000 icon](images/icon.png)
 - Copy it to `Contents/Resources/Wineskin.icns` inside the app
 - In Terminal run `touch ~/Applications/SimCity\ 2000.app` so that Finder updates the icon
