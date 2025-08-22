@@ -4,7 +4,7 @@
 
 [GOG](https://www.gog.com/en/game/simcity_2000_special_edition) sells SimCity 2000 Special Edition, but it's the MS-DOS version bundled with DOSBox which is restricted to 640 x 480 resolution. The advantage of the Windows 95 version is that it can make full use of a larger monitor resolution.
 
-This should be easy, [Wine](https://www.winehq.org/) can run Windows software after all. However there are several complications:
+This should be easy, [Wine](https://www.winehq.org/) can run Windows software after all, and Rosetta 2 will take care of translating Intel instructions to ARM on Apple Silicon processors. However there are several complications:
 - Apple removed 32-bit binary support from macOS 10.15 Catalina onwards. This means modern macOS can no longer run 32-bit executables natively.
 - To work around this, Wine must be compiled in 64-bit mode with WOW64 support. WOW64 (“Windows-on-Windows 64-bit”) is a compatibility layer inside Windows (and now Wine) which allows 32-bit Windows applications to run inside a 64-bit environment.
 - While SimCity 2000 is 32-bit code, its installer is a 16-bit executable which WOW64 cannot run. We will need to replace this.
@@ -26,7 +26,7 @@ Wine binaries seem to be difficult to obtain. The usual method to install is to 
 I moved onto another method described in [Corbin Davenport's guide](https://www.spacebar.news/how-to-play-simcity-2000-mac/) which is [Porting Kit](https://www.portingkit.com/). It's a free project functionally similar to CrossOver which in fact also uses the CrossOver forks of Wine, but uses [WineSkin](https://github.com/The-Wineskin-Project/wineskin-source) to manage separate configurations rather than the proprietary 'bottles'. Corbin's guide leaves out the very key detail that we must pick a 64bit Wine engine during setup (not the default). The recent engines exhibit the same smackw32.dll failure as above, but engine `WS11WineCX64Bit21.1.0` pre-dates this Wine issue, and so it does work with SimCity 2000 - and other affected Maxis games.
 
 ## Installation Steps
-- Obtain SimCity 2000 Special Edition for Windows 95
+- Obtain SimCity 2000 Special Edition for PC, readily available for a few pounds [on eBay for example](https://www.ebay.co.uk/sch/i.html?_nkw=SimCity+2000+Special+Edition+PC).
 - Extract the WIN95 folder
 - Download the [generic 32bit InstallShield 3 EXE](https://community.pcgamingwiki.com/files/file/111-installshield-3-32-bit-generic-installer/) and place it in the WIN95 folder
 - Download [Porting Kit](https://www.portingkit.com/)
