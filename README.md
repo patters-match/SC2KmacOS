@@ -52,4 +52,5 @@ I moved onto another method described in [Corbin Davenport's guide](https://www.
 - Launch the game from the macOS LaunchPad, the window will default to full screen:
   ![Fullscreen main menu](images/windowsize.png)
 - In sc2kfix menu select Always skip introduction videos to clear the "Skipping in-flight movie" message each startup
+- Now that the .app file is built, you no longer need Porting Kit. If you want to tweak settings later, you can launch `~/Applications/SimCity\ 2000.app/Contents/Wineskin`.
 - Enjoy!
