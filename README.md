@@ -6,7 +6,7 @@
 
 This should be easy, [Wine](https://www.winehq.org/) can run Windows software after all, and Rosetta 2 will take care of translating Intel instructions to ARM on Apple Silicon processors. However there are several complications:
 - Apple removed 32-bit binary support from macOS 10.15 Catalina onwards. This means modern macOS can no longer run 32-bit executables natively.
-- To work around this, Wine must be compiled in 64-bit mode with WOW64 support. WOW64 (“Windows-on-Windows 64-bit”) is a compatibility layer inside Windows (and now Wine) which allows 32-bit Windows applications to run inside a 64-bit environment.
+- To work around this, Wine must be compiled in 64-bit mode with WOW64 support. WOW64 ('Windows-on-Windows 64-bit') is a compatibility layer inside Windows (and now Wine) which allows 32-bit Windows applications to run inside a 64-bit environment.
 - While SimCity 2000 is 32-bit code, its installer is a 16-bit executable which WOW64 cannot run. We will need to replace this.
 - The game has compatibility issues with current Wine 64-bit builds (_smackw32.dll_ fails to initialise).
 - The game has other issues which need fixing, in particular:
