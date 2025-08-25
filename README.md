@@ -8,7 +8,7 @@ This should be easy, [Wine](https://www.winehq.org/) can run Windows software af
 - Apple removed 32-bit binary support from macOS 10.15 Catalina onwards. This means modern macOS can no longer run 32-bit executables natively.
 - To work around this, Wine must be compiled in 64-bit mode with WOW64 support. WOW64 (“Windows-on-Windows 64-bit”) is a compatibility layer inside Windows (and now Wine) which allows 32-bit Windows applications to run inside a 64-bit environment.
 - While SimCity 2000 is 32-bit code, its installer is a 16-bit executable which WOW64 cannot run. We will need to replace this.
-- The game has compatibility issues with current Wine 64-bit builds (smackw32.dll fails to initialise).
+- The game has compatibility issues with current Wine 64-bit builds (_smackw32.dll_ fails to initialise).
 - The game has other issues which need fixing, in particular:
   - palette cycling animation issues (water flow)
   - load/save issues
@@ -23,7 +23,7 @@ Wine binaries seem to be difficult to obtain for macOS. The usual method to inst
 [Corbin Davenport's 2023 guide](https://www.spacebar.news/how-to-play-simcity-2000-mac/) for the same task I am writing about had recommended to use [CrossOver](https://www.codeweavers.com/crossover) which is a commercial wrapper around a Wine fork. It adds proprietary patches and improvements to Wine, notably reliable WOW64 support back when upstream Wine's implementation was still incomplete. It supports creating multiple Wine configurations or 'bottles' for the specific needs of each Windows software package. It does provide a 14 day trial but I was unable to get it to play SimCity 2000, with the log revealing the reason being smackw32.dll failing to initialise. [This bug](https://bugs.winehq.org/show_bug.cgi?id=54670) was reported for Wine 8.0, it was confirmed to still affect Wine 9.7, and the ticket remains open.
 
 #### Porting Kit ✅
-I moved onto another method described in [Corbin Davenport's guide](https://www.spacebar.news/how-to-play-simcity-2000-mac/) which is [Porting Kit](https://www.portingkit.com/). It's a free project functionally similar to CrossOver which in fact also uses the CrossOver forks of Wine, but uses [WineSkin](https://github.com/The-Wineskin-Project/wineskin-source) to manage separate configurations rather than the proprietary 'bottles'. Corbin's guide leaves out the very key detail that we must pick a 64bit Wine engine during setup (not the default). The recent engines exhibit the same smackw32.dll failure as above, but engine `WS11WineCX64Bit21.1.0` pre-dates this Wine issue, and so it does work with SimCity 2000 - and other affected Maxis games.
+I moved onto another method described in [Corbin Davenport's guide](https://www.spacebar.news/how-to-play-simcity-2000-mac/) which is [Porting Kit](https://www.portingkit.com/). It's a free project functionally similar to CrossOver which in fact also uses the CrossOver forks of Wine, but uses [WineSkin](https://github.com/The-Wineskin-Project/wineskin-source) to manage separate configurations rather than the proprietary 'bottles'. The default engine and the recent engine versions exhibit the same _smackw32.dll_ failure as above, but engine `WS11WineCX64Bit21.1.0` pre-dates this Wine issue, and so it does work with SimCity 2000 - and other affected Maxis games.
 
 ## Installation Steps
 - Obtain SimCity 2000 Special Edition for PC, readily available for a few pounds [on eBay for example](https://www.ebay.co.uk/sch/i.html?_nkw=SimCity+2000+Special+Edition+PC).
@@ -44,7 +44,7 @@ I moved onto another method described in [Corbin Davenport's guide](https://www.
 - Download and unzip the comprehensive [sc2kfix release](https://github.com/sc2kfix/sc2kfix).
 - In Porting Kit, Games > Installed, click the gear wheel on your Custom Port and select Show in Finder.
 - Right-click on the new app, Show Package Contents.
-- Copy winmm.dll from sc2kfix to `Contents/drive_c/Program Files/Maxis/SimCity 2000`.
+- Copy _winmm.dll_ from sc2kfix to `Contents/drive_c/Program Files/Maxis/SimCity 2000`.
 - Back to Porting Kit, Games > Installed, click the gear wheel on your Custom Port and select Wine Configuration.
 - Libraries tab > New override for library: `winmm` > Add - which will default to (native, builtin).
 - Download [icns-creator](https://github.com/alptugan/icns-creator).
@@ -54,6 +54,6 @@ I moved onto another method described in [Corbin Davenport's guide](https://www.
 - In Terminal run `touch ~/Applications/SimCity\ 2000.app` so that Finder updates the icon.
 - Launch the game from the macOS LaunchPad, the window will default to full screen:
   ![Fullscreen main menu](images/windowsize.png)
-- In sc2kfix menu select Always skip introduction videos to clear the "Skipping in-flight movie" message each startup.
+- In sc2kfix menu select Always skip introduction videos to clear the 'Skipping in-flight movie' message each startup.
 - Now that the .app file is built, you no longer need Porting Kit. If you want to tweak settings later, you can launch `open ~/Applications/SimCity\ 2000.app/Contents/Wineskin.app` then navigate to Advanced.
 - Enjoy! 🏗️
